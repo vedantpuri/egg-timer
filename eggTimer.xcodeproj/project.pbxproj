@@ -13,6 +13,8 @@
 		6F38EE452038B7890098FFFB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6F38EE432038B7890098FFFB /* Main.storyboard */; };
 		6F38EE4E20392FEE0098FFFB /* PrefsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F38EE4D20392FEE0098FFFB /* PrefsViewController.swift */; };
 		6F38EE552039DDD10098FFFB /* EggTimer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F38EE542039DDD10098FFFB /* EggTimer.swift */; };
+		6FCD0FDC2039F28B0022D8EB /* Preferences.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FCD0FDB2039F28B0022D8EB /* Preferences.swift */; };
+		6FCD0FDE2039F6B20022D8EB /* ding.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 6FCD0FDD2039F6B20022D8EB /* ding.mp3 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +27,8 @@
 		6F38EE472038B7890098FFFB /* eggTimer.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = eggTimer.entitlements; sourceTree = "<group>"; };
 		6F38EE4D20392FEE0098FFFB /* PrefsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrefsViewController.swift; sourceTree = "<group>"; };
 		6F38EE542039DDD10098FFFB /* EggTimer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EggTimer.swift; sourceTree = "<group>"; };
+		6FCD0FDB2039F28B0022D8EB /* Preferences.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Preferences.swift; sourceTree = "<group>"; };
+		6FCD0FDD2039F6B20022D8EB /* ding.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = ding.mp3; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,7 +92,9 @@
 			children = (
 				6F38EE412038B7890098FFFB /* Assets.xcassets */,
 				6F38EE432038B7890098FFFB /* Main.storyboard */,
+				6FCD0FDD2039F6B20022D8EB /* ding.mp3 */,
 				6F38EE542039DDD10098FFFB /* EggTimer.swift */,
+				6FCD0FDB2039F28B0022D8EB /* Preferences.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -154,6 +160,7 @@
 			files = (
 				6F38EE422038B7890098FFFB /* Assets.xcassets in Resources */,
 				6F38EE452038B7890098FFFB /* Main.storyboard in Resources */,
+				6FCD0FDE2039F6B20022D8EB /* ding.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -166,6 +173,7 @@
 			files = (
 				6F38EE402038B7890098FFFB /* ViewController.swift in Sources */,
 				6F38EE552039DDD10098FFFB /* EggTimer.swift in Sources */,
+				6FCD0FDC2039F28B0022D8EB /* Preferences.swift in Sources */,
 				6F38EE4E20392FEE0098FFFB /* PrefsViewController.swift in Sources */,
 				6F38EE3E2038B7890098FFFB /* AppDelegate.swift in Sources */,
 			);
