@@ -724,14 +724,14 @@
                                     </button>
                                     <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="1MV-qG-FHf">
                                         <rect key="frame" x="115" y="-1" width="116" height="62"/>
-                                        <buttonCell key="cell" type="smallSquare" title="Stop" bezelStyle="smallSquare" image="NSAddTemplate" imagePosition="overlaps" alignment="center" lineBreakMode="truncatingTail" state="on" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="gNk-2v-er5">
+                                        <buttonCell key="cell" type="smallSquare" title="Stop" bezelStyle="smallSquare" image="NSAddTemplate" imagePosition="overlaps" alignment="center" lineBreakMode="truncatingTail" enabled="NO" state="on" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="gNk-2v-er5">
                                             <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                             <font key="font" metaFont="system" size="24"/>
                                         </buttonCell>
                                     </button>
                                     <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="CxC-1D-5nY">
                                         <rect key="frame" x="231" y="-1" width="115" height="62"/>
-                                        <buttonCell key="cell" type="smallSquare" title="Reset" bezelStyle="smallSquare" image="NSAddTemplate" imagePosition="overlaps" alignment="center" lineBreakMode="truncatingTail" state="on" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="yeJ-4B-hy6">
+                                        <buttonCell key="cell" type="smallSquare" title="Reset" bezelStyle="smallSquare" image="NSAddTemplate" imagePosition="overlaps" alignment="center" lineBreakMode="truncatingTail" enabled="NO" state="on" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="yeJ-4B-hy6">
                                             <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                             <font key="font" metaFont="system" size="24"/>
                                         </buttonCell>
@@ -754,11 +754,44 @@
                                     <real value="3.4028234663852886e+38"/>
                                 </customSpacing>
                             </stackView>
+                            <stackView distribution="fill" orientation="vertical" alignment="centerX" horizontalStackHuggingPriority="249.99998474121094" verticalStackHuggingPriority="249.99998474121094" detachesHiddenViews="YES" translatesAutoresizingMaskIntoConstraints="NO" id="xni-n0-HxF">
+                                <rect key="frame" x="20" y="80" width="306" height="371"/>
+                                <subviews>
+                                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="WQE-YB-HdW">
+                                        <rect key="frame" x="52" y="254" width="203" height="117"/>
+                                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="center" title="6:00" id="iIq-QM-qXB">
+                                            <font key="font" size="100" name="HelveticaNeue"/>
+                                            <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                        </textFieldCell>
+                                    </textField>
+                                    <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="qnh-ta-E9J">
+                                        <rect key="frame" x="20" y="0.0" width="266" height="246"/>
+                                        <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyUpOrDown" image="stopped" id="jaO-lE-k28"/>
+                                    </imageView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="qnh-ta-E9J" firstAttribute="leading" secondItem="xni-n0-HxF" secondAttribute="leading" constant="20" symbolic="YES" id="BbD-0F-uEf"/>
+                                    <constraint firstAttribute="trailing" secondItem="qnh-ta-E9J" secondAttribute="trailing" constant="20" symbolic="YES" id="kE3-gG-37p"/>
+                                </constraints>
+                                <visibilityPriorities>
+                                    <integer value="1000"/>
+                                    <integer value="1000"/>
+                                </visibilityPriorities>
+                                <customSpacing>
+                                    <real value="3.4028234663852886e+38"/>
+                                    <real value="3.4028234663852886e+38"/>
+                                </customSpacing>
+                            </stackView>
                         </subviews>
                         <constraints>
                             <constraint firstItem="lRg-Rq-KQV" firstAttribute="leading" secondItem="m2S-Jp-Qdl" secondAttribute="leading" id="1au-Tt-xNO"/>
+                            <constraint firstItem="xni-n0-HxF" firstAttribute="top" secondItem="m2S-Jp-Qdl" secondAttribute="top" constant="20" id="Cn0-zl-ExA"/>
+                            <constraint firstItem="xni-n0-HxF" firstAttribute="leading" secondItem="m2S-Jp-Qdl" secondAttribute="leading" constant="20" id="FZo-Yt-U2L"/>
                             <constraint firstAttribute="trailing" secondItem="lRg-Rq-KQV" secondAttribute="trailing" id="PQM-Ds-hAC"/>
+                            <constraint firstAttribute="trailing" secondItem="xni-n0-HxF" secondAttribute="trailing" constant="20" id="U9F-KV-2Sy"/>
                             <constraint firstAttribute="bottom" secondItem="lRg-Rq-KQV" secondAttribute="bottom" id="Vbr-p3-fCv"/>
+                            <constraint firstItem="lRg-Rq-KQV" firstAttribute="top" secondItem="xni-n0-HxF" secondAttribute="bottom" constant="20" id="z8E-vX-gOV"/>
                         </constraints>
                     </view>
                 </viewController>
@@ -768,5 +801,6 @@
     </scenes>
     <resources>
         <image name="NSAddTemplate" width="11" height="11"/>
+        <image name="stopped" width="128" height="128"/>
     </resources>
 </document>
