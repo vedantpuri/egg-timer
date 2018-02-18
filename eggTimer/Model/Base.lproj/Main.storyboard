@@ -60,13 +60,13 @@
                                     </items>
                                 </menu>
                             </menuItem>
-                            <menuItem title="Timer" enabled="NO" id="DMW-30-wPt">
+                            <menuItem title="Timer" id="DMW-30-wPt">
                                 <modifierMask key="keyEquivalentModifierMask"/>
-                                <menu key="submenu" title="Timer" id="J2f-c2-XeB">
+                                <menu key="submenu" title="Timer" autoenablesItems="NO" id="J2f-c2-XeB">
                                     <items>
                                         <menuItem title="Start" enabled="NO" keyEquivalent="s" id="saL-bC-9wt">
                                             <connections>
-                                                <action selector="startTimerMenuItemSelected:" target="Ady-hI-5gd" id="z8D-z6-eHT"/>
+                                                <action selector="startTimerMenuItemSelected:" target="Ady-hI-5gd" id="tbZ-bI-clJ"/>
                                             </connections>
                                         </menuItem>
                                         <menuItem title="Stop" enabled="NO" keyEquivalent="x" id="sVC-PP-fGT">
@@ -127,7 +127,7 @@
                 </application>
                 <customObject id="Voe-Tx-rLC" customClass="AppDelegate" customModule="eggTimer" customModuleProvider="target">
                     <connections>
-                        <outlet property="resetTimerMenuItem" destination="J2f-c2-XeB" id="gGm-wC-xNR"/>
+                        <outlet property="resetTimerMenuItem" destination="Xie-mh-Qk0" id="DdI-D0-WgR"/>
                         <outlet property="startTimerMenuItem" destination="saL-bC-9wt" id="RYs-dM-yp3"/>
                         <outlet property="stopTimerMenuItem" destination="sVC-PP-fGT" id="225-nP-eQf"/>
                     </connections>
@@ -196,6 +196,9 @@
                                         <buttonCell key="cell" type="smallSquare" title="Reset" bezelStyle="smallSquare" image="NSAddTemplate" imagePosition="overlaps" alignment="center" lineBreakMode="truncatingTail" enabled="NO" state="on" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="yeJ-4B-hy6">
                                             <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                             <font key="font" metaFont="system" size="24"/>
+                                            <connections>
+                                                <binding destination="XfG-lQ-9wD" name="argument" keyPath="self.resetButton" id="j8S-iF-EBf"/>
+                                            </connections>
                                         </buttonCell>
                                         <connections>
                                             <action selector="resetButtonClicked:" target="XfG-lQ-9wD" id="hdQ-pT-aeU"/>
@@ -261,7 +264,7 @@
                     </view>
                     <connections>
                         <outlet property="eggImageView" destination="qnh-ta-E9J" id="xHo-Qx-2SY"/>
-                        <outlet property="resetButtonClicked" destination="CxC-1D-5nY" id="TfJ-WP-qff"/>
+                        <outlet property="resetButton" destination="CxC-1D-5nY" id="LaQ-rQ-sWp"/>
                         <outlet property="startButton" destination="4D9-Sc-XXJ" id="gQL-bG-hU1"/>
                         <outlet property="stopButton" destination="1MV-qG-FHf" id="maM-LW-3HO"/>
                         <outlet property="timeLeftField" destination="WQE-YB-HdW" id="V6R-Zt-ige"/>
@@ -326,7 +329,7 @@
                                 </textFieldCell>
                             </textField>
                             <popUpButton verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="8D9-uy-n8O">
-                                <rect key="frame" x="18" y="144" width="381" height="26"/>
+                                <rect key="frame" x="18" y="144" width="390" height="26"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <popUpButtonCell key="cell" type="push" title="For custardy yet firm soft-boiled eggs: 6 minutes" bezelStyle="rounded" alignment="left" lineBreakMode="truncatingTail" state="on" borderStyle="borderAndBezel" tag="6" imageScaling="proportionallyDown" inset="2" selectedItem="D4O-O9-qbx" id="g4g-pV-abI">
                                     <behavior key="behavior" lightByBackground="YES" lightByGray="YES"/>
@@ -382,7 +385,7 @@ DQ
                                 </connections>
                             </button>
                             <slider verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="7Na-rA-OJl">
-                                <rect key="frame" x="18" y="56" width="380" height="24"/>
+                                <rect key="frame" x="18" y="56" width="389" height="24"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <sliderCell key="cell" enabled="NO" state="on" alignment="left" minValue="1" maxValue="25" doubleValue="6" tickMarkPosition="above" numberOfTickMarks="25" allowsTickMarkValuesOnly="YES" sliderType="linear" id="r2d-sQ-P5u"/>
                                 <connections>

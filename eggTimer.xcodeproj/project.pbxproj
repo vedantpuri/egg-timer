@@ -12,6 +12,7 @@
 		6F38EE422038B7890098FFFB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6F38EE412038B7890098FFFB /* Assets.xcassets */; };
 		6F38EE452038B7890098FFFB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6F38EE432038B7890098FFFB /* Main.storyboard */; };
 		6F38EE4E20392FEE0098FFFB /* PrefsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F38EE4D20392FEE0098FFFB /* PrefsViewController.swift */; };
+		6F38EE552039DDD10098FFFB /* EggTimer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F38EE542039DDD10098FFFB /* EggTimer.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +24,7 @@
 		6F38EE462038B7890098FFFB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6F38EE472038B7890098FFFB /* eggTimer.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = eggTimer.entitlements; sourceTree = "<group>"; };
 		6F38EE4D20392FEE0098FFFB /* PrefsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrefsViewController.swift; sourceTree = "<group>"; };
+		6F38EE542039DDD10098FFFB /* EggTimer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EggTimer.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -40,6 +42,7 @@
 			isa = PBXGroup;
 			children = (
 				6F38EE3C2038B7890098FFFB /* eggTimer */,
+				6F38EE582039E19A0098FFFB /* Supporting Files */,
 				6F38EE3B2038B7890098FFFB /* Products */,
 			);
 			sourceTree = "<group>";
@@ -56,14 +59,38 @@
 			isa = PBXGroup;
 			children = (
 				6F38EE3D2038B7890098FFFB /* AppDelegate.swift */,
-				6F38EE3F2038B7890098FFFB /* ViewController.swift */,
-				6F38EE412038B7890098FFFB /* Assets.xcassets */,
-				6F38EE432038B7890098FFFB /* Main.storyboard */,
-				6F38EE4D20392FEE0098FFFB /* PrefsViewController.swift */,
-				6F38EE462038B7890098FFFB /* Info.plist */,
-				6F38EE472038B7890098FFFB /* eggTimer.entitlements */,
+				6F38EE562039E15E0098FFFB /* View Controllers */,
+				6F38EE592039E1AC0098FFFB /* Model */,
 			);
 			path = eggTimer;
+			sourceTree = "<group>";
+		};
+		6F38EE562039E15E0098FFFB /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				6F38EE3F2038B7890098FFFB /* ViewController.swift */,
+				6F38EE4D20392FEE0098FFFB /* PrefsViewController.swift */,
+			);
+			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		6F38EE582039E19A0098FFFB /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				6F38EE472038B7890098FFFB /* eggTimer.entitlements */,
+				6F38EE462038B7890098FFFB /* Info.plist */,
+			);
+			path = "Supporting Files";
+			sourceTree = SOURCE_ROOT;
+		};
+		6F38EE592039E1AC0098FFFB /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				6F38EE412038B7890098FFFB /* Assets.xcassets */,
+				6F38EE432038B7890098FFFB /* Main.storyboard */,
+				6F38EE542039DDD10098FFFB /* EggTimer.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,6 +165,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				6F38EE402038B7890098FFFB /* ViewController.swift in Sources */,
+				6F38EE552039DDD10098FFFB /* EggTimer.swift in Sources */,
 				6F38EE4E20392FEE0098FFFB /* PrefsViewController.swift in Sources */,
 				6F38EE3E2038B7890098FFFB /* AppDelegate.swift in Sources */,
 			);
@@ -267,10 +295,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_ENTITLEMENTS = eggTimer/eggTimer.entitlements;
+				CODE_SIGN_ENTITLEMENTS = "Supporting Files/eggTimer.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				INFOPLIST_FILE = eggTimer/Info.plist;
+				INFOPLIST_FILE = "Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = vedantpuri.eggTimer;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -282,10 +310,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_ENTITLEMENTS = eggTimer/eggTimer.entitlements;
+				CODE_SIGN_ENTITLEMENTS = "Supporting Files/eggTimer.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				INFOPLIST_FILE = eggTimer/Info.plist;
+				INFOPLIST_FILE = "Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = vedantpuri.eggTimer;
 				PRODUCT_NAME = "$(TARGET_NAME)";
